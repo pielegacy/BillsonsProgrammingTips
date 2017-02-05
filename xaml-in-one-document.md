@@ -19,7 +19,7 @@ drag and drop designer for easily rendering your pages
     and the interaction and logic with C#
 - A XAML element usually looks like the following
     ```xml
-    <Element x:Name="ElementName" Property="Value" AnotherProperty="AnotherValue" />
+    <Element x:Name="ElementName" Property="Value" AnotherProperty="AnotherValue" EventHandler="Event"/>
     ```
 - Basic Parts of an Element:
     - Element
@@ -40,3 +40,7 @@ drag and drop designer for easily rendering your pages
                 ```csharp
                 MainText.Text = "New Text";
                 ```
+    - Events
+        - Events are called when an action happens to an element
+        - Different elements have different Events
+        - The code for an event is in the XAML pages .cs file
