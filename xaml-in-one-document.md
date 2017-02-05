@@ -12,9 +12,9 @@ if you can't find it.
 drag and drop designer for easily rendering your pages
 - Every .xaml file has a C# file behind it
     ```
-        MainPage.xaml
-            -> MainPage.xaml.cs
-        ```
+    MainPage.xaml
+        -> MainPage.xaml.cs
+    ```
     - The idea for this structure is that we define the visual layout and styles of our pages using XAML
     and the interaction and logic with C#
 - A XAML element usually looks like the following
