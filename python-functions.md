@@ -162,3 +162,33 @@ def add(num1, num2):
 answer = add(1,2) # answer = 3
 ```
 
+## Quiz
+
+1. Which of the following are functions and which are procedures?
+
+    A. 
+    ```python
+    def multiply(num1, num2):
+        return num1 * num2
+    ```
+    B.
+    ```python
+    def printShit():
+        print "Hello all"
+    ```
+    C.
+    ```python
+    def addShit(num1, num2):
+        result = num1 + num2
+        print num1 + num2
+    ```
+    D.
+    ```python
+    def grabSecondNumber(numbers):
+        result = -1
+        try:
+            result = numbers[1]
+        except:
+            print "No number found"
+        return result
+    ```
