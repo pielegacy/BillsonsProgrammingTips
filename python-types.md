@@ -109,3 +109,48 @@ preventing such errors from happening.
 
 ### Typecasting 
 
+Typecasting is the process of changing a variable's type. This is often achieved through a function that needs to be run 
+on a variable. With this we can basically ensure a variable has the type we expected it to have, even in dynamically typed languages
+like Python.
+
+Python's typecasting functions are quite intuitive, there's nothing about them that doesn't make sense:
+
+```python
+int("10") # convert a string to an int
+float("10.4") # convert a string to a float
+str(10) # convert either an integer or a float to a string
+bool("true") # convert a string to a bool
+```
+
+Using these functions, you can ensure that no matter the variable it will have the data type you wanted.
+These typecasting functions obviously work with other functions such as `raw_input()`:
+
+```python
+number = int(raw_input("Enter a whole number"))
+decision = bool(raw_input("Are you sure this is the number? (true/false)"))
+```
+
+Typecasting does have it's flaws however, if the conversion is impossible then you will get an error. For 
+example, the `int` function can't convert words:
+
+```python
+number = int("poo") # error: invalid int literal
+```
+
+For these cases, we need to check if a variable can possibly be transformed into another:
+
+### Type Checking
+
+In most cases, you'll need to check if a string is actually a number. Strings have a built in method (a function attached
+to it) which allows for checking if the string is a whole number, called `isdigit`:
+
+```python
+number = raw_input("Enter a number")
+isnum = number.isdigit() # check if the string is a digit
+if (isnum == True):
+  print "That was in fact a number"
+else
+  print "That wasn't a number"
+```
+
+In any other case (such as with a float) you'd have to use a `try and catch` which I'll explain later :)
