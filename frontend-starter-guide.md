@@ -35,7 +35,7 @@ If you don't have that handy you can just copy this:
 ```
 *You can remove the comments if you wish, it's purely for annotation.*
 
-## Text Elements
+### Text Elements
 
 The HTML markup language has a bunch of elements for showing text and doing basic formatting to the text. 
 Stuff like font, text color and size can be changed using HTML but you shouldn't use them;
@@ -75,7 +75,7 @@ Note you can manually break a paragraph using a special "self closing" tag `<br/
     </p>
 ```
 
-## Section Elements
+### Section Elements
 
 It is a good idea to divide your page into different sections as it allows for good styling as 
 well as easier interactions. The most generic is the `<div>` which will place the contents within it in a block element. This is an example of how to use divs:
@@ -118,7 +118,7 @@ All these special divs are optional to use but it is probably smart to work with
 
 There are others but these are always the most useful ones.
 
-## Hyperlinks
+### Hyperlinks
 
 A a hyperlink element is just that, a link to another page. Hyperlinks are defined with
 the `<a>` tag and are often used like so:
@@ -139,7 +139,7 @@ another site, or not even an html file:
     <a href="FolderName/file.html">Go to a sub folder's file</a>
 ```
 
-## Lists
+### Lists
 
 Lists are just that, a list. They come in two variants:
 
@@ -175,4 +175,6 @@ Yes you can have lists within lists:
     </ol>
 ```
 
-##
+## CSS
+
+### Template
