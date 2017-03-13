@@ -1,5 +1,5 @@
-# Frontend Starter Guide
-
+# Frontend Starter Reference
+*For Caroline*
 ## HTML
 ### New Page Template
 
@@ -178,3 +178,75 @@ Yes you can have lists within lists:
 ## CSS
 
 ### Template
+For the HTML, linking a css file looks like this:
+```html
+<link rel="stylesheet" href=""/>
+```
+*Replace the content of the href with the css file*
+
+The structure of a CSS ruleset will often look something like this
+
+```css
+/* This is a comment*/
+selector {
+    number-property: 0;
+    string-property: "value";
+}
+```
+
+### How CSS works?
+CSS for the most part is very straight forward on the surface but has a lot of stuff
+to learn so it's quite complicated as well.
+
+There are 3 ways that CSS can access an HTML element, these include:
+
+- **Tag Name**
+    - The actual name of the tag/s you want to edit
+    - When CSS is applied to a tag name, every single one of the tags on the page will get the CSS
+    - Referring to a tag name requires *no special symbols*:
+```css
+p {
+    /* Any CSS in here will be applied to the paragraph elements*/
+}
+```
+- **ID**
+    - Giving an element an ID is like giving it a name, it must be unique for the page
+    - ID's are more necessary for when we are working with JavaScript but for now they are still worth learning
+    - To apply an ID to an HTML element you simply use the `id` attribute
+    - To reference the ID in CSS, you just use the name of the ID with a `#` in front
+```html
+<!--Note that IDs and Classes can't have spaces-->
+<div id="id-name">
+</div>
+```
+```css
+#id-name
+{
+    /*Any CSS in here will be applied to the element with the id "id-name"*/
+}
+```
+- **Class**
+    - Classes are used to group elements under a certain type or description
+    - Unlike id's, classes can be applied to as many elements as you'd like.
+    - If you can't think of a reason as to why an element or a style must be unique, use a class
+        - If in doubt, just use a class
+    - A class can be applied to an element using the `class` attribute
+        - Note that seperating the classes with spaces can apply multiple classes
+    - Refer to the classes in CSS with the class name prefixed with a `.`
+```html
+<div class="stuff">
+    <p class="cool epic"/>
+</div>
+```
+```css
+.stuff {
+
+}
+.cool {
+
+}
+.epic
+{
+
+}
+```
