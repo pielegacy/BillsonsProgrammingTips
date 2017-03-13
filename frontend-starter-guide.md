@@ -250,3 +250,12 @@ p {
 
 }
 ```
+
+Use this table for reference as to whether you should use a class or an ID
+
+| Scenario | ID or Class? |
+| -------- | ------------ | 
+| I want the style of the CSS to be used on multiple elements through out the page | Class | 
+| The element I'm styling is special and needs to be seen as one of a kind for the page | ID |
+| This element occurs quite frequently throughout the site | Class |
+| I am going to be applying JavaScript to the element | ID |
